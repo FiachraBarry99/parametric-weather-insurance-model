@@ -10,7 +10,7 @@ At the moment this class calculates these properties by targeting a required ret
 ## `InusrancePolicy` class parameters:
 `strike`: the value above/below which the policy pays out  
 `amount`: the amount that is paid out to the insured (usually daily revenue value)  
-`data`: the source of historical data (Pandas series or dataframe)  
+`data`: the source of historical data (Pandas series)  
 `high_or_low`: whether the client wants a policy to payout when the actual value is above/below strike  
 `consec_days`: the amount of consecutive days of the actual value being above/below the strike for the policy to pay out  
 `n`: number of samples taken from data during Monte Carlo simulation. Reduce this value if objects are taking too long too initialise but you will be sacrificing accuracy  
